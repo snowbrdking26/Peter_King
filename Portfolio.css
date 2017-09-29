@@ -1,7 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
+
+html,
+html * {
+	box-sizing: border-box;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: 200;
+	
+}
+
 nav {
-	background-color:#2592D8;
+	background-color:#FFFFFF;
 	text-transform: uppercase;
     padding: 10px 10px;
     color: white;
@@ -10,10 +19,26 @@ nav {
     font-weight:500;
 }
 
-a {
-	padding: 10px;
-	margin: 0;
+body {
+max-width: 1000px;
+margin-left:auto;
+margin-right: auto;	
+}
+
+img {
+	width:100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.clearfix ul li a {
+	color:#2592D8;
+	padding: 0 10px;
+	margin: 10px 0 0 0;
 	float: right;
+	font-weight: 300;
+	font-size: 10px
 }
 
 body {
@@ -22,31 +47,51 @@ body {
 
 h1 {
 	margin: 0 0;
-	padding: 290px 5px 0 5px;
+	padding: 0px 5px 0 5px;
 	text-align: center;
 	color:white;
-	letter-spacing: 2px;
+	font-size: 30px;
+	letter-spacing: 4px;
+	font-weight: 200;
+
 }
 h2 {
-	margin: 0 0;
+	margin: 0 0 30px;
 	padding: 5px 5px;
 	text-transform: uppercase;
 	font-size: 12px;
 	text-align: center;
 	color: white;
 	letter-spacing: 2px;
+	font-weight: 100;
 }
 
-header {
-background-image: url("http://imgur.com/7t4CUSt.jpeg");
-background-size: cover;
-background-position: center;
-/*background-color: #B5E2FA;*/
-height:800px;
+.button {
+	border: 2px #FFFFFF solid;
+	padding: 8px 30px;
+	border-radius: 30px;
+	color:#FFFFFF;
+	text-decoration: none;
+	margin-top:80px;
+	
 }
 
-p {
+.name {
+	background-image: url("http://imgur.com/7t4CUSt.jpeg");
+	background-size: cover;
+/*	height:700px;*/
+}
+
+.description {
+	padding: 180px 0;
+/*	align-content: center;*/
+	text-align: center;
+	
+}
+
+.tan_button {
 	text-transform: uppercase;
+	margin: 40px 0 20px 0;
 }
 
 /*column floated*/
@@ -55,6 +100,34 @@ p {
 	text-transform: uppercase;
 }
 
+.col {
+	float:left;
+	padding: 14px 7px 0px;
+}
+
+
+
+.col-md-one-half {
+width: 50%;	
+}
+
+.col-lg-one-fourth {
+	width: 25%;
+}
+
+.info-tan-box {
+	background-color: #b9a88e;
+	color:#ffffff;
+	padding: 30px 20px 30px;
+	text-align: center;
+}
+
+.info-dark-box {
+	background-color: #2D2D35;
+	color:#ffffff;
+	padding: 30px 20px 30px;
+	text-align: center;
+}
 
 div.about{
 	padding: 50px 0;
@@ -81,6 +154,13 @@ div.contact{
 	/*	width 33% used for columns*/
 }
 
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear:both;
+}
 
 .clearfix:after {
   visibility: hidden;
@@ -89,20 +169,257 @@ div.contact{
   clear: both;
   height: 0;
   font-size: 0;
+  padding: 0 0 10px 0;
 }
 .made {
+	color:#2592D8;
 	float: left;
 }
 .copywrite {
+	color:#2592D8;
 	float: right;
-	
 }
 footer {
 	text-transform: uppercase;
     padding: 10px 20px;
-    background-color: #2592D8;
+    background-color: #FFFFFF;
     color:white;
-    font-size:14px;
+    font-size:10px;
     letter-spacing: .08em;
     font-weight:500;
+	margin: 0 0 10px 0;
 }
+
+
+
+/*iPhone6 6 plus*/
+@media (max-width: 420px){
+
+.description {
+	padding: 80px 0 100px 0;
+/*	align-content: center;*/
+	text-align: center;
+	
+}
+	nav {
+	background-color:#FFFFFF;
+	text-transform: uppercase;
+    margin-left: auto;
+	margin-right: auto;
+    color: white;
+    font-size:10px;
+    letter-spacing: .08em;
+    font-weight:500;
+	display:table;
+}
+	
+	.clearfix ul li a {
+	color:#2592D8;
+	padding: 10px 10px;
+	width:100%;
+	margin: 300px 0;
+	float: none;
+	font-weight: 300;
+	
+}
+	
+	li {
+		text-align: center;
+	}
+	
+	ul {
+		padding: 0px 0px;
+	}
+
+	
+}
+
+
+
+
+/*tablet view*/
+
+@media (max-width: 400px){
+
+nav {
+	background-color:#FFFFFF;
+	text-transform: uppercase;
+    margin-left: auto;
+	margin-right: auto;
+    color: white;
+    font-size:10px;
+    letter-spacing: .08em;
+    font-weight:500;
+	display:table;
+}
+	ul {
+		padding: 0px 0px;
+	}
+
+img {
+	width:100%;
+	max-width: 100%;
+	display:block;
+	height: auto;
+	vertical-align: middle;
+}
+
+	.col {
+		width:100%;
+	}
+
+.clearfix ul li a {
+	color:#2592D8;
+	padding: 10px 10px;
+	width:100%;
+	margin: 300px 0;
+	float: none;
+	font-weight: 300;
+	
+}
+	
+	li {
+		text-align: center;
+	}
+
+body {
+	margin: 0 auto
+}
+
+h1 {
+	margin: 0 0;
+	padding: 0px 5px 0;
+	text-align: center;
+	color:white;
+	letter-spacing: 4px;
+}
+h2 {
+	margin: 0 0 0 0;
+	padding: 5px 5px;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	letter-spacing: 2px;
+	font-weight: 300px;
+	
+}
+
+button {
+	border: 2px #FFFFFF solid;
+	padding: 8px 30px;
+	border-radius: 30px;
+	color:#FFFFFF;
+	text-decoration: none;
+	margin-top: 200px;
+	
+}
+	
+
+.name {
+	background-image: url("http://imgur.com/7t4CUSt.jpeg");
+	background-size: cover;
+/*	height:700px;*/
+}
+
+.description {
+	padding: 70px 0;
+/*	align-content: center;*/
+	text-align: center;
+}
+
+p {
+	text-transform: uppercase;
+	margin: 10px 0 10px 0;
+
+}
+
+
+.content{
+	align-content: center;
+}	
+	
+/*column floated*/
+.column {
+	float: none;
+	text-transform: uppercase;
+	display:block;
+	
+}
+
+.info-tan-box {
+	background-color: #b9a88e;
+	color:#ffffff;
+	padding: 30px 20px 30px;
+	text-align: center;
+}
+
+/*
+div.about{
+	padding: 50px 0;
+	background-color: #00487C;
+	text-align: center;
+	width: auto;
+	color: white;
+		width 33% used for columns
+}
+div.portfolio{
+	padding: 50px 0;
+	background-color: #3E6680; 
+	text-align: center;
+	width:auto;
+	color: white;
+*/
+	/*	width 33% used for columns*/
+/*}*/
+/*
+div.contact{
+	padding: 50px 0;
+	background-color: #3C474B; #9EEFE5
+	text-align: center;
+	width:auto;
+	color: white;
+*/
+	/*	width 33% used for columns*/
+/*}*/
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear:both;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: none;
+  height: 0;
+  font-size: 0;
+}
+.made {
+	color:#2592D8;
+	width:100%;
+	
+	
+}
+.copywrite {
+	width:100%;
+
+}
+footer {
+	text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color:white;
+    font-size:10px;
+    letter-spacing: .08em;
+    font-weight:500;
+	text-align: center;
+	margin: 0 0 20px 0;
+}
+
+}
+
