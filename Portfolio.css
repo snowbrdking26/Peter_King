@@ -103,8 +103,8 @@ body {
 }
 
 h1 {
-	margin: 0 0;
-	padding: 0px 5px 0 10px;
+	margin: 0 0 0 0;
+	padding: 5px 5px 0 10px;
 	text-align: center;
 	color: white;
 	font-size: 30px;
@@ -268,14 +268,15 @@ body {
 
 /* Center website */
 .main {
-    max-width: 1000px;
     margin: auto;
 	
 }
 
+/*
 h1 {
     word-break: break-all;
 }
+*/
 
 .row {
     margin: 0px -16px 8px;
@@ -372,24 +373,26 @@ body {
 }
 
 h1 {
-	margin: 0 0;
-	padding: 0px 5px 0 7px;
+	margin: 0 0 0 0;
+	padding: 5px 5px 0 10px;
 	text-align: center;
-	color:white;
-	letter-spacing: 6px;
+	color: white;
 	font-size: 30px;
-	
+	letter-spacing: 6px;
+	font-weight: 200;
+
 }
 h2 {
-	margin: 0 0 0 0;
+	margin: 0 0 30px;
 	padding: 5px 5px;
 	text-transform: uppercase;
 	font-size: 12px;
 	text-align: center;
 	color: white;
 	letter-spacing: 2px;
-	
+	font-weight: 500;
 }
+	
 
 button {
 	border: 2px #FFFFFF solid;
