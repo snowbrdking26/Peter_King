@@ -106,8 +106,8 @@ h1 {
 	margin: 0 0;
 	padding: 0px 5px 0 10px;
 	text-align: center;
-	color:white;
-	font-size: 29px;
+	color: white;
+	font-size: 30px;
 	letter-spacing: 6px;
 	font-weight: 200;
 
@@ -177,6 +177,7 @@ width: 50%;
 	color:#ffffff;
 	padding: 30px 20px 30px;
 	text-align: center;
+	height: 210px;
 }
 
 .info-dark-box {
@@ -184,6 +185,7 @@ width: 50%;
 	color:#ffffff;
 	padding: 30px 20px 30px;
 	text-align: center;
+	height: 210px;
 }
 
 div.about{
@@ -272,7 +274,6 @@ body {
 }
 
 h1 {
-    font-size: 50px;
     word-break: break-all;
 }
 
@@ -372,10 +373,12 @@ body {
 
 h1 {
 	margin: 0 0;
-	padding: 0px 5px 0;
+	padding: 0px 5px 0 7px;
 	text-align: center;
 	color:white;
-	letter-spacing: 4px;
+	letter-spacing: 6px;
+	font-size: 30px;
+	
 }
 h2 {
 	margin: 0 0 0 0;
