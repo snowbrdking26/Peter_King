@@ -9,13 +9,45 @@ html * {
 	
 }
 
-/*dropbtn*/
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #2592D8;
+  color: white;
+}
+
+#navbar .dropbtntop {
+  display: none;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+
+/*droplist button*/
 .dropbtntan {
 	background-color: #B9A88E;
     color: white;
     padding: 6px;
     font-size: 16px;
-    border: none;
     cursor: pointer;
 	border-radius: 25px;
 	border: 2px #FFFFFF solid;
@@ -26,7 +58,6 @@ html * {
     color: white;
     padding: 6px;
     font-size: 16px;
-    border: none;
     cursor: pointer;
 	border-radius: 25px;
 	border-color:white;
@@ -64,22 +95,29 @@ html * {
 .dropdown:hover .dropbtn {
     background-color: #9C8C74;
 }
-/*dropbtn*/
 
-nav {
-	background-color:#FFFFFF;
-	text-transform: uppercase;
-    padding: 10px 10px;
-    color: white;
-    font-size:14px;
-    letter-spacing: .08em;
-    font-weight:500;
+.dropdown:hover .topbtn {
+background-color: #333333;
+color:white;
+border: none;
+font-size: 15px;
+cursor: pointer;
 }
+
+.dropbtntop {
+	background-color: #333333;
+    color: white;
+    padding: 6px;
+    font-size: 20px;
+    cursor: pointer;
+	border: none;
+	
+}
+
 
 body {
 max-width: auto;
-margin-left:auto;
-margin-right: auto;	
+margin: 0 auto;
 }
 
 img {
@@ -89,23 +127,12 @@ img {
 	vertical-align: middle;
 }
 
-.clearfix ul li a {
-	color:#2592D8;
-	padding: 0 10px;
-	margin: 10px 0 0 0;
-	float: right;
-	font-weight: 500;
-	font-size: 11px
-}
 
-body {
-	margin: 0 auto
-}
 
 h1 {
-	margin: 40px 0 0 0;
-	padding: 20px 5px 0 10px;
 	text-align: center;
+	margin: 40px 0 0 0;
+	padding: 20px 0px 0 5px;
 	color: white;
 	font-size: 30px;
 	letter-spacing: 6px;
@@ -113,11 +140,11 @@ h1 {
 
 }
 h2 {
+	text-align: center;
 	margin: 0 0 30px;
 	padding: 5px 5px;
 	text-transform: uppercase;
 	font-size: 12px;
-	text-align: center;
 	color: white;
 	letter-spacing: 2px;
 	font-weight: 500;
@@ -160,8 +187,6 @@ h2 {
 	float:left;
 	padding: 14px 7px 0px;
 }
-
-
 
 .col-md-one-half {
 width: 50%;	
@@ -251,32 +276,6 @@ footer {
 	margin: 0 0 10px 0;
 }
 
-/*
-* {
-    box-sizing: border-box;
-}
-*/
-
-/*
-body {
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-family: Arial;
-}
-*/
-
-/* Center website */
-.main {
-    margin: auto;
-	
-}
-
-/*
-h1 {
-    word-break: break-all;
-}
-*/
-
 .row {
     margin: 0px -16px 8px;
 	
@@ -319,29 +318,14 @@ h1 {
 /*tablet view*/
 
 @media (max-width: 600px){
-
-nav {
-	background-color:#FFFFFF;
-	text-transform: uppercase;
-    margin-left: auto;
-	margin-right: auto;
-    color: white;
-    font-size:10px;
-    letter-spacing: .08em;
-    font-weight:500;
-	display:table;
+	
+#navbar a {
+  float:left;
+	text-align:center;
+  padding: 14px 5px;
+  font-size: 10px;
 }
 	
-	a {
-		width:100%;
-		display:block;
-		margin: 0px;
-		
-	}
-	ul {
-		padding: 0px 0px;
-	}
-
 img {
 	width:100%;
 	max-width: 100%;
@@ -354,67 +338,16 @@ img {
 		width:100%;
 	}
 
-.clearfix ul li a {
-	color:#2592D8;
-	padding: 1px 1px;
-	width:100%;
-	margin: 0px 0;
-	float: none;
-	
-}
-	
-	li {
-		text-align: center;
-	}
-
-body {
-	margin: 0 auto
-}
-
 h1 {
+	text-align: center;
 	margin: 0 0 0 0;
 	padding: 5px 5px 0 10px;
-	text-align: center;
-	color: white;
-	font-size: 30px;
-	letter-spacing: 6px;
-	font-weight: 200;
 
 }
-h2 {
-	margin: 0 0 30px;
-	padding: 5px 5px;
-	text-transform: uppercase;
-	font-size: 12px;
-	text-align: center;
-	color: white;
-	letter-spacing: 2px;
-	font-weight: 500;
-}
+
 	
-
-button {
-	border: 2px #FFFFFF solid;
-	padding: 8px 30px;
-	border-radius: 30px;
-	color:#FFFFFF;
-	text-decoration: none;
-	margin-top: 20px;
-	
-}
-	
-
-.name {
-	background-image: url("http://imgur.com/7t4CUSt.jpeg");
-	background-size: cover;
-/*	height:700px;*/
-}
-
 .description {
 	padding: 80px 0 100px 0;
-/*	align-content: center;*/
-	text-align: center;
-	
 }
 
 p {
@@ -446,35 +379,6 @@ p {
 	padding: 30px 20px 30px;
 	text-align: center;
 }
-
-/*
-div.about{
-	padding: 50px 0;
-	background-color: #00487C;
-	text-align: center;
-	width: auto;
-	color: white;
-		width 33% used for columns
-}
-div.portfolio{
-	padding: 50px 0;
-	background-color: #3E6680; 
-	text-align: center;
-	width:auto;
-	color: white;
-*/
-	/*	width 33% used for columns*/
-/*}*/
-/*
-div.contact{
-	padding: 50px 0;
-	background-color: #3C474B; #9EEFE5
-	text-align: center;
-	width:auto;
-	color: white;
-*/
-	/*	width 33% used for columns*/
-/*}*/
 
 .row:before, .row:after {
 	content: "";

@@ -5,23 +5,16 @@
 
 <title>Peter's Portfolio</title>
 <link href="Portfolio.css" rel="stylesheet" type="text/css">
+
 </head>
 
-<body>
-<nav class="clearfix">
-	<ul>
-		<li>
-			<a> About </a>
-			<a>	Portfolio </a>
-			<a> Contact </a>
-		</li>
-	</ul>
-</nav>
-
-<header>
-</header>
-
-<main>
+<body onscroll="myFunctionSticky()">
+	<div class="topnavbar" id="navbar">
+	  <a href="#home">Home</a>
+	  <a href="#news">News</a>
+	  <a href="#contact">Contact</a>
+	  <a href="#about">About</a>
+</div>
 
 <div class="name">
 	<div class="description">
@@ -31,20 +24,10 @@
 	</div>
 </div>
 
-<!--
-<div class="clearfix">
-	<div class="content">
-		<div class="column about"> About </div>
-		<div class="column portfolio"> Portfolio </div>
-		<div class="column contact"> Contact </div>
-	</div>
-</div>
--->
-
 <div class="row">
 	<div class="col col-md-one-half">
 		<div class="info-tan-box">
-			<h2>Portfolio</h2>
+		  <h2>Portfolio</h2>
 			<p>View my portfolio of projects that showcase skills in HTML CSS and JavaScript.</p>
 <!--			<p class="tan_button"><a href="" class="button">Read More</a></p>-->
 	<div class="dropdown">
@@ -59,7 +42,7 @@
 	</div>
 	<div class="col col-md-one-half">
 		<div class="info-dark-box">
-			<h2>About</h2>
+		  <h2>About</h2>
 			<p>View Resume, Education, Recommendations, Hobbies, and Contact Information.</p>
 <!--			<p class="tan_button"><a href="" class="button">Read More</a></p>-->
 	<div class="dropdown">
@@ -120,6 +103,6 @@
   <p class="copywrite">Copywrite 2017</p>
 </footer>
 
-</main>
+	<script type="text/javascript" src="Portfolio.js"></script>
 </body>
 </html>
