@@ -225,7 +225,7 @@ span {
 	text-align: center;
 }
 
-button.backbtntan {
+.btn {
 	background-color: #333333;
     color: white;
     padding: 6px;
@@ -234,6 +234,7 @@ button.backbtntan {
 	border-radius: 25px;
 	border-color:white;
 	border: 2px #FFFFFF solid;
+	text-decoration: none;
 	
 }
 
