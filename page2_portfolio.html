@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Peter's Portfolio</title>
+<link href="Portfolio-pg2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="topnavbar" id="navbar">
+		<span onclick="openNav()">Menu &#9776;</span>
+	</div>
+
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="Portfolio.html">Home</a>
+	  <a href="#">Services</a>
+	  <a href="#">About</a>
+	  <a href="#">Contact</a>
+	</div>
+
+
+<h2>Lightbox</h2>
+
+<main>
+
+<div class="row">
+  <div class="column">
+    <img src="images/Prism Assets/Memory Game.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Prism Assets/Blog.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Prism Assets/Website.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Prism Assets/Ski_Barn.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/Prism Assets/Memory Game.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/Prism Assets/Blog.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/Prism Assets/Website.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/Prism Assets/Ski_Barn.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/Prism Assets/Memory Game.png" style="width:100%" onclick="currentSlide(1)" alt="Memory Game">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Prism Assets/Blog.png" style="width:100%" onclick="currentSlide(2)" alt="Blog">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Prism Assets/Website.png" style="width:100%" onclick="currentSlide(3)" alt="Website">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Prism Assets/Ski_Barn.png" style="width:100%" onclick="currentSlide(4)" alt="Ski Barn">
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/Prism Assets/gallery-1.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum rem voluptate sapiente iure, eveniet, similique quas quibusdam repudiandae eos quasi dignissimos, voluptatum atque blanditiis fugiat ullam, enim suscipit? Commodi, modi. ipsum..</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="images/Prism Assets/gallery-2.jpg" alt="Lights" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum rem voluptate sapiente iure, eveniet, similique quas quibusdam repudiandae eos quasi dignissimos, voluptatum atque blanditiis fugiat ullam, enim suscipit? Commodi, modi. ipsum..</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="images/Prism Assets/gallery-3.jpg" alt="Nature" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum rem voluptate sapiente iure, eveniet, similique quas quibusdam repudiandae eos quasi dignissimos, voluptatum atque blanditiis fugiat ullam, enim suscipit? Commodi, modi. ipsum..</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="images/Prism Assets/gallery-4.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum rem voluptate sapiente iure, eveniet, similique quas quibusdam repudiandae eos quasi dignissimos, voluptatum atque blanditiis fugiat ullam, enim suscipit? Commodi, modi. ipsum..</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="backbtn">
+<button class="backbtntan" onclick="location.href='portfolio.html';">Back to Home</button>
+</div>
+
+
+
+</main>
+
+<script type="text/javascript" src="portfolio-pg2.js"></script>
+</body>
+</html>

@@ -9,9 +9,9 @@ html * {
 }
 
 .topnavbar {
-/*  background-color: #333;*/
+  background-color: #333;
   z-index: 1;
-	/*  overflow: hidden;*/
+  overflow: hidden;
 }
 
 /*side nav*/
@@ -20,7 +20,7 @@ span {
 	color: white;
 	background-color: #333;
 	float: right;
-	padding: 0 20px;
+	padding: 5px 20px;
 	font-size: 20px;
 	cursor: pointer;
 }
@@ -96,7 +96,7 @@ span {
 
 body {
 max-width: auto;
-margin: 0 auto;
+margin: 0px auto;
 }
 
 img {
@@ -137,11 +137,13 @@ h2 {
 	
 }
 
-.name {
+.picture {
 	background-image: url("https://imgur.com/7t4CUSt.jpeg");
 	background-size: cover;
 /*	height:700px;*/
 }
+
+
 
 .description {
 	padding: 180px 0;
@@ -223,7 +225,7 @@ footer {
 }
 
 .row {
-    margin: 0px -16px 8px;
+    margin: 0px 0px 8px;
 	
 }
 
@@ -299,6 +301,12 @@ p {
 .content{
 	align-content: center;
 }	
+	
+	
+	
+	
+	
+	
 	
 /*column floated*/
 .column {
