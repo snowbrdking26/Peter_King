@@ -1,10 +1,18 @@
 @charset "UTF-8";
 /* CSS Document */
 
+html,
+html * {
+	box-sizing: border-box;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: 200;
+}
+
 body, html {
     height: 100%;
     margin: 0 auto;
-	background-color: #D4D4D4;
+	background: #D4D4D4;
+
 }
 
 main {
@@ -17,6 +25,11 @@ h2 {
 	text-align: center;
 	padding: 20px 0;
 	margin: 0 0;
+	font-weight: 800;
+}
+
+h3 {
+	font-weight: 500;
 }
 
 body {
@@ -341,6 +354,7 @@ p {
 	
 footer {
 	text-transform: uppercase;
+	padding: 10px 20px;
     background-color: #D4D4D4;
     color:white;
     font-size:10px;
