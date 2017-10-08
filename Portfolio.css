@@ -208,7 +208,7 @@ width: 50%;
 	float: left;
 	font-weight: 600;
 }
-.copywrite {
+.author {
 	color:#2592D8;
 	float: right;
 	font-weight: 600;
@@ -340,7 +340,7 @@ p {
 	width:100%;
 }
 	
-.copywrite {
+.author {
 	width:100%;
 
 }
@@ -355,4 +355,3 @@ footer {
 }
 
 }
-

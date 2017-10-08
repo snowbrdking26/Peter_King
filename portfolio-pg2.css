@@ -285,3 +285,64 @@ box-shadow: 0px 0px 25px grey;
 .content:hover {
 	box-shadow: 0px 0px 25px grey;
 }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0;
+  padding: 0 0 10px 0;
+}
+
+.made {
+	color:#2592D8;
+	float: left;
+	font-weight: 600;
+}
+.author {
+	color:#2592D8;
+	float: right;
+	font-weight: 600;
+}
+footer {
+	text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: #D4D4D4;
+    color:white;
+    font-size:11px;
+    letter-spacing: .08em;
+    font-weight:500;
+	margin: 0 0 50px 0;
+}
+
+@media (max-width: 600px){
+
+	.column {
+    float: left;
+    width: 100%;
+}
+	
+.made {
+	color:#2592D8;
+	width:100%;
+}
+
+.author {
+	width:100%;
+}
+	
+footer {
+	text-transform: uppercase;
+    background-color: #D4D4D4;
+    color:white;
+    font-size:10px;
+    letter-spacing: .08em;
+    font-weight:500;
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+}
+
+
