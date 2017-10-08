@@ -83,6 +83,10 @@ span {
 	border: 2px #FFFFFF solid;
 }
 
+.btntan:hover {
+box-shadow: 0px 0px 25px white;
+}
+
 .btndark {
     background-color: #2D2D35;
     color: white;
@@ -92,6 +96,10 @@ span {
 	border-radius: 25px;
 	border-color:white;
 	border: 2px #FFFFFF solid;
+}
+
+.btndark:hover {
+box-shadow: 0px 0px 25px white;
 }
 
 body {
@@ -178,12 +186,16 @@ width: 50%;
 	height: 210px;
 }
 
+
+
 .info-dark-box {
 	background-color: #2D2D35;
 	color:#ffffff;
 	padding: 30px 20px 30px;
 	text-align: center;
 	height: 210px;
+}
+
 }
 
 .row:before, .row:after {
