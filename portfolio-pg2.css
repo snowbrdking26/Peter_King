@@ -216,6 +216,12 @@ footer {
 	margin: 0 0 10px 0;
 }
 
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 p {
 	text-transform: uppercase;
 	margin: 10px 0 10px 0;
