@@ -2,6 +2,7 @@
 /* exported openNav */
 /* exported closeNav */
 /* exported openBlog */
+/* exported openResume*/
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
@@ -32,5 +33,11 @@ function openBlog() {
 	"use strict";
     window.open("https://snowbrdking26.github.io/First-Blog/BlogPK.html");
 }
+
+function openResume() {
+	"use strict";
+    window.open("https://snowbrdking26.github.io/Peter_King/WDI_Resume.pdf");
+}
+
 
 
