@@ -21,8 +21,13 @@ span {
 	background-color: #333;
 	float: right;
 	padding: 5px 20px;
+	margin: 5px;
 	font-size: 20px;
 	cursor: pointer;
+}
+
+.name{
+	float: left;
 }
 
 .sidenav {
@@ -196,8 +201,6 @@ width: 50%;
 	height: 210px;
 }
 
-}
-
 .row:before, .row:after {
 	content: "";
 	display: table;
@@ -277,7 +280,7 @@ footer {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 /*tablet view*/
 
-@media (max-width: 600px){
+@media (max-width: 750px){
 	
 img {
 	width:100%;

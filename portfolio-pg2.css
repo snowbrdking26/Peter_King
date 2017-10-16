@@ -72,8 +72,12 @@ span {
 	background-color: #333;
 	float: right;
 	padding: 5px 20px;
+	margin: 5px;
 	font-size: 20px;
 	cursor: pointer;
+}
+.name{
+	float: left;
 }
 
 .sidenav {
@@ -112,7 +116,7 @@ span {
     margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 750px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
@@ -224,10 +228,14 @@ footer:after {
 p {
 	text-transform: uppercase;
 	margin: 10px 0 10px 0;
-
 }
 
-@media (max-width: 600px){
+.resume {
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+
+@media (max-width: 750px){
 
 	.column {
     float: left;
@@ -252,6 +260,20 @@ footer {
     letter-spacing: .08em;
     font-weight:500;
 	text-align: center;
+}
+	
+	
+	.resume {
+	text-align: center;
+	margin: 0 0 50px 0;
+	max-width:500px;
+}
+	img {
+	text-align: center;
+ 	margin: 0 auto;
+	max-height: 450px;
+	max-width: 400px;
+		
 }
 	
 }

@@ -1,6 +1,5 @@
 // JavaScript Document
 /* exported openBlog */
-/* exported openWebsite */
 /* exported openSkiBarn */
 /* exported openMemory */
 /* exported myFunctionSticky */
@@ -36,11 +35,6 @@ function closeNav() {
 function openBlog() {
 	"use strict";
     window.open("https://snowbrdking26.github.io/First-Blog/BlogPK.html");
-}
-
-function openWebsite() {
-	"use strict";
-    window.open("https://snowbrdking26.github.io/First-Website/WebsitePK.html");
 }
 
 function openSkiBarn() {
