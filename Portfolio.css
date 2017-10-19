@@ -131,11 +131,25 @@ h1 {
 
 h2 {
 	text-align: center;
-	margin: 0 0 30px;
+	margin: 0 0 0px;
 	padding: 5px 5px;
 	text-transform: uppercase;
 	font-size: 12px;
 	color: white;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+h2.projects {
+	padding: 20px 0 0px;
+}
+
+.projects {
+	text-align: center;
+	margin: 0 0 30px;
+	padding: 5px 5px;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: black;
 	letter-spacing: 2px;
 	font-weight: 500;
 }
@@ -147,13 +161,22 @@ h2 {
 	color:#FFFFFF;
 	text-decoration: none;
 	margin-top:80px;
-	
+
 }
 
 .picture {
 	background-image: url("https://imgur.com/7t4CUSt.jpeg");
 	background-size: cover;
 /*	height:700px;*/
+}
+
+img.logos {
+	width:25%;
+	margin: 0px 0 30px;
+}
+
+.threelogo {
+	text-align: center;
 }
 
 
@@ -170,17 +193,22 @@ h2 {
 	text-transform: uppercase;
 }
 
+p {
+	margin: 10px 0 10px 0;
+}
+
+p.info {
+	text-transform: lowercase;
+}
+
+
 .col {
 	float:left;
-	padding: 14px 7px 0px;
+	padding: 0 0;
 }
 
 .col-md-one-half {
-width: 50%;	
-}
-
-.col-lg-one-fourth {
-	width: 25%;
+width: 50%;
 }
 
 .info-tan-box {
@@ -188,7 +216,7 @@ width: 50%;
 	color:#ffffff;
 	padding: 30px 20px 30px;
 	text-align: center;
-	height: 210px;
+	height: 300px;
 }
 
 
@@ -198,7 +226,7 @@ width: 50%;
 	color:#ffffff;
 	padding: 30px 20px 30px;
 	text-align: center;
-	height: 210px;
+	height: 300px;
 }
 
 .row:before, .row:after {
@@ -218,7 +246,7 @@ width: 50%;
   font-size: 0;
   padding: 0 0 10px 0;
 }
-.made {
+/*.made {
 	color:#2592D8;
 	float: left;
 	font-weight: 600;
@@ -227,7 +255,7 @@ width: 50%;
 	color:#2592D8;
 	float: right;
 	font-weight: 600;
-}
+}*/
 footer {
 	text-transform: uppercase;
     padding: 10px 20px;
@@ -240,14 +268,13 @@ footer {
 }
 
 .row {
-    margin: 0px 0px 8px;
-	
+    margin: 0 0;
 }
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
-    padding: 0px 8px 8px 8px;
+    padding: 0 0;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -256,7 +283,7 @@ footer {
     width: 25%;
 }
 
-/* Clear floats after rows */ 
+/* Clear floats after rows */
 .row:after {
     content: "";
     display: table;
@@ -267,8 +294,56 @@ footer {
 .content {
     background-color: #E4E4E4;
     padding: 10px;
-	
+		min-height: 340px;
+
 }
+
+.container {
+margin-right: auto;
+margin-left: auto;
+padding-right: 15px;
+padding-left: 15px;
+background-color: #E4E4E4;
+width: 750px;
+}
+
+section.work {
+	background-color: #E4E4E4;
+
+}
+
+p.click {
+	font-size: 12px;
+	text-transform: none;
+}
+h3 {
+	font-weight: 500;
+}
+
+.made {
+	color:#2592D8;
+	width:100%;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.author {
+	width:100%;
+	color:#2592D8;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+footer {
+	text-transform: uppercase;
+    background-color: black;
+    color:white;
+    font-size:10px;
+    letter-spacing: .08em;
+    font-weight:500;
+	text-align: center;
+}
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 900px) {
@@ -281,13 +356,22 @@ footer {
 /*tablet view*/
 
 @media (max-width: 750px){
-	
+
 img {
 	width:100%;
 	max-width: 100%;
 	display:block;
 	height: auto;
 	vertical-align: middle;
+}
+
+.container {
+margin-right: auto;
+margin-left: auto;
+padding-right: 15px;
+padding-left: 15px;
+background-color: #E4E4E4;
+width: 100%;
 }
 
 	.col {
@@ -301,35 +385,23 @@ h1 {
 
 }
 
-	
+
 .description {
 	padding: 80px 0 100px 0;
 }
 
-p {
-	text-transform: uppercase;
-	margin: 10px 0 10px 0;
-
+.content{
+	align-content: center;
 }
 
 
-.content{
-	align-content: center;
-}	
-	
-	
-	
-	
-	
-	
-	
 /*column floated*/
 .column {
 	float: none;
 	text-transform: uppercase;
 	display:block;
 	width: 100%;
-	
+
 }
 
 
@@ -348,25 +420,6 @@ p {
   clear: none;
   height: 0;
   font-size: 0;
-}
-	
-.made {
-	color:#2592D8;
-	width:100%;
-}
-	
-.author {
-	width:100%;
-
-}
-footer {
-	text-transform: uppercase;
-    background-color: #FFFFFF;
-    color:white;
-    font-size:10px;
-    letter-spacing: .08em;
-    font-weight:500;
-	text-align: center;
 }
 
 }
