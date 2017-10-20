@@ -1,7 +1,6 @@
 /* exported myFunctionSticky */
 /* exported openNav */
 /* exported closeNav */
-/* exported openBlog */
 /* exported openResume*/
 /* exported openBlog */
 /* exported openSkiBarn */
@@ -33,16 +32,10 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-function openBlog() {
-	"use strict";
-    window.open("https://snowbrdking26.github.io/First-Blog/BlogPK.html");
-}
-
 function openResume() {
 	"use strict";
     window.open("https://snowbrdking26.github.io/Peter_King/WDI_Resume.pdf");
 }
-
 
 function openBlog() {
 	"use strict";
