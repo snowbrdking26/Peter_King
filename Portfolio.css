@@ -64,22 +64,16 @@ span {
     margin-left: 50px;
 }
 
-.backbtn {
-
-}
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
-
 
 /*droplist button*/
 .btntan {
@@ -165,7 +159,6 @@ h2.projects {
 	color:#FFFFFF;
 	text-decoration: none;
 	margin-top:80px;
-
 }
 
 .picture {
@@ -182,8 +175,6 @@ img.logos {
 .threelogo {
 	text-align: center;
 }
-
-
 
 .description {
 	padding: 180px 0;
@@ -269,16 +260,7 @@ main {
   font-size: 0;
   padding: 0 0 10px 0;
 }
-/*.made {
-	color:#2592D8;
-	float: left;
-	font-weight: 600;
-}
-.author {
-	color:#2592D8;
-	float: right;
-	font-weight: 600;
-}*/
+
 footer {
 	text-transform: uppercase;
     padding: 10px 20px;
@@ -288,12 +270,6 @@ footer {
     letter-spacing: .08em;
     font-weight:500;
 	margin: 0 0 0px 0;
-}
-
-.rowcol {
-	margin-left: auto;
-	margin-right: auto;
-
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -338,7 +314,6 @@ width: 950px;
 
 section.work {
 	background-color: #E4E4E4;
-
 }
 
 p.click {
@@ -372,7 +347,6 @@ footer {
     font-weight:500;
 	text-align: center;
 }
-
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 /*tablet view*/
