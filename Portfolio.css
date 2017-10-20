@@ -119,26 +119,12 @@ img {
 
 h1 {
 	text-align: center;
-	margin: 40px 0 0 0;
-	padding: 20px 0px 0 5px;
+	padding: 0px 0px 0 5px;
+	margin: 60px 0 0 0;
 	color: white;
 	font-size: 30px;
 	letter-spacing: 6px;
 	font-weight: 200;
-}
-
-h2 {
-	text-align: center;
-	margin: 0 0 0px;
-	padding: 5px 5px;
-	text-transform: uppercase;
-	font-size: 12px;
-	color: white;
-	letter-spacing: 2px;
-	font-weight: 500;
-}
-h2.projects {
-	padding: 20px 0 0px;
 }
 
 .projects {
@@ -201,9 +187,46 @@ p.darkbox {
 }
 
 p.info {
+	font-size: 12px;
 	text-transform: none;
 	margin: 20px 0;
+
 }
+
+p.click {
+	font-size: 12px;
+	text-transform: none;
+	font-weight: 500;
+	color:black;
+}
+
+h2 {
+	text-align: center;
+	margin: 0 0 0px;
+	padding: 5px 5px;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: white;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+
+h2.boxes {
+	font-size: 24px;
+}
+
+h2.projects {
+	padding: 20px 0 0px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: 500;
+	color:black;
+}
+
 
 
 .col {
@@ -316,26 +339,22 @@ section.work {
 	background-color: #E4E4E4;
 }
 
-p.click {
-	font-size: 12px;
-	text-transform: none;
-}
-h3 {
-	font-weight: 500;
-}
+
 
 .made {
 	color:#2592D8;
 	width:100%;
-	font-weight: 600;
+	font-weight: 500;
 	text-transform: uppercase;
+	font-size: 14px;
 }
 
 .author {
 	width:100%;
 	color:#2592D8;
-	font-weight: 600;
+	font-weight: 500;
 	text-transform: uppercase;
+	font-size: 14px;
 }
 
 footer {
@@ -368,8 +387,8 @@ width: 100%;
 
 h1 {
 	text-align: center;
-	margin: 0 0 0 0;
-	padding: 5px 5px 0 10px;
+	margin: 160px 0 0 0;
+	padding: 0px 5px 0 10px;
 }
 
 .description {
