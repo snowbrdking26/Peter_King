@@ -10,6 +10,8 @@
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
+// stick nav bar
+// https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
 
 function myFunctionSticky() {
 	"use strict";
@@ -20,7 +22,9 @@ function myFunctionSticky() {
   }
 }
 
-//side nav
+
+// side nav menu
+// https://www.w3schools.com/howto/howto_js_sidenav.asp
 
 function openNav() {
 	"use strict";
