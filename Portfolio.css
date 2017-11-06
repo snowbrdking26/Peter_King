@@ -154,12 +154,16 @@ h1 {
 }
 
 img.logos {
-	width:25%;
-	margin: 0px 0 30px;
+	height:80px;
+	width: auto;
+	margin: 0px 10px 30px;
 }
 
-.threelogo {
-	text-align: center;
+.containerlogo {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: center;
 }
 
 .description {
@@ -211,8 +215,16 @@ h2 {
 	font-weight: 500;
 }
 
-h2.boxes {
+h2.about {
 	font-size: 24px;
+	color: #2D2D35;
+	padding: 45px 0;
+}
+
+h2.resume1 {
+	font-size: 24px;
+	color: #ffffff;
+	padding: 45px 0;
 }
 
 h2.projects {
@@ -240,10 +252,10 @@ width: 50%;
 
 .info-tan-box {
 	background-color: #b9a88e;
-	color:#ffffff;
+	color:#2D2D35;
 	padding: 30px 20px 30px;
 	text-align: center;
-	height: 250px;
+	height: 400px;
 }
 
 main {
@@ -263,7 +275,7 @@ main {
 	color:#ffffff;
 	padding: 30px 20px 30px;
 	text-align: center;
-	height: 250px;
+	height: 400px;
 }
 
 .row:before, .row:after {
