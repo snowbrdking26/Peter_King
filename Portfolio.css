@@ -228,7 +228,7 @@ h2.resume1 {
 }
 
 h2.projects {
-	padding: 20px 0 0px;
+	padding: 70px 0 0px;
 	font-size: 24px;
 	font-weight: 600;
 }
@@ -278,13 +278,21 @@ main {
 	height: 400px;
 }
 
-.row:before, .row:after {
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+/*.row:before, .row:after {
 	content: "";
 	display: table;
 }
 .row:after {
 	clear:both;
-}
+}*/
 
 .clearfix:after {
   visibility: hidden;
@@ -345,6 +353,7 @@ padding-right: 15px;
 padding-left: 15px;
 background-color: #E4E4E4;
 width: 950px;
+height:500px;
 }
 
 section.work {
