@@ -6,6 +6,7 @@
 /* exported openSkiBarn */
 /* exported openMemory */
 /* exported openWebsite */
+/* exported openAirTrafficGame */
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
@@ -46,17 +47,24 @@ function openBlog() {
     window.open("https://snowbrdking26.github.io/First-Blog/BlogPK.html");
 }
 
-function openSkiBarn() {
+function openWebsite() {
 	"use strict";
-    window.open("https://dash.generalassemb.ly/snowboardking26/build-your-own-business-website");
+	window.open("https://snowbrdking26.github.io/First-Website/WebsitePK.html");
 }
+
 
 function openMemory() {
 	"use strict";
     window.open("https://snowbrdking26.github.io/memory-game-improved/Memory-game-improved.html");
 }
 
-function openWebsite() {
+
+function openSkiBarn() {
 	"use strict";
-	window.open("https://snowbrdking26.github.io/First-Website/WebsitePK.html");
+    window.open("https://dash.generalassemb.ly/snowboardking26/build-your-own-business-website");
+}
+
+function openAirTrafficGame() {
+	"use strict";
+    window.open("https://snowbrdking26.github.io/Tropical_Air_Traffic_Game/");
 }
