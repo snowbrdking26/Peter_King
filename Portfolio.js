@@ -7,6 +7,7 @@
 /* exported openMemory */
 /* exported openWebsite */
 /* exported openAirTrafficGame */
+/* exported openWineAtlas */
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
@@ -67,4 +68,10 @@ function openSkiBarn() {
 function openAirTrafficGame() {
 	"use strict";
     window.open("https://snowbrdking26.github.io/Tropical_Air_Traffic_Game/");
+}
+
+
+function openWineAtlas() {
+"use strict";
+    window.open("https://wine-atlas.herokuapp.com/wines/home");
 }

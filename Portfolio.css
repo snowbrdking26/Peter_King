@@ -64,6 +64,11 @@ span {
     margin-left: 50px;
 }
 
+.aWineTag {
+	margin: 10px 10px;
+	text-decoration: none;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
