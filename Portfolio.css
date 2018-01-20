@@ -8,17 +8,21 @@ html * {
 	font-weight: 200;
 }
 
+/* https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
 .topnavbar {
-  background-color: #333;
+  background-color: black;
   z-index: 1;
   overflow: hidden;
+  top: 0;
+  position: fixed;
+  width: 100%;
 }
 
 /*side nav*/
 
 span {
 	color: white;
-	background-color: #333;
+	background-color: black;
 	float: right;
 	padding: 5px 20px;
 	margin: 5px;
@@ -69,6 +73,10 @@ span {
 	text-decoration: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -80,7 +88,6 @@ span {
   width: 100%;
 }
 
-/*droplist button*/
 .btntan {
 	background-color: #B9A88E;
     color: white;
@@ -143,6 +150,8 @@ h1 {
 	font-weight: 500;
 }
 
+
+
 .button {
 	border: 2px #FFFFFF solid;
 	padding: 8px 30px;
@@ -162,6 +171,33 @@ img.logos {
 	height:60px;
 	width: auto;
 	margin: 0px 10px 30px;
+}
+
+.logosGithub {
+	height:30px;
+	width: auto;
+}
+
+.logosLinkedIn {
+	height:34px;
+	width: auto;
+}
+
+.containerLogoLinks {
+	text-align: center;
+}
+
+.divLogosGitLinkedIn {
+	margin: 30px 0 0 0;
+}
+
+.textListOfSkills {
+font-size: 18px;
+}
+
+.skills {
+	text-align: center;
+	margin: 0 70px 25px 70px
 }
 
 .containerlogo {
@@ -196,14 +232,14 @@ p.darkbox {
 }
 
 p.info {
-	font-size: 12px;
+	font-size: 16px;
 	text-transform: none;
 	margin: 20px 0;
 
 }
 
 p.click {
-	font-size: 12px;
+	font-size: 16px;
 	text-transform: none;
 	font-weight: 500;
 	color:black;
@@ -214,7 +250,7 @@ h2 {
 	margin: 0 0 0px;
 	padding: 5px 5px;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 16px;
 	color: white;
 	letter-spacing: 3px;
 	font-weight: 500;
@@ -345,18 +381,15 @@ box-shadow: 0px 0px 20px #888888;
 .container {
 margin-right: auto;
 margin-left: auto;
-padding-right: 15px;
-padding-left: 15px;
+padding: 15px 15px 35px 15px;
 background-color: #E4E4E4;
 width: 950px;
-height:500px;
+/* height:600px; */
 }
 
 section.work {
 	background-color: #E4E4E4;
 }
-
-
 
 .made {
 	color:#2592D8;
@@ -395,7 +428,7 @@ margin-left: auto;
 padding-right: 15px;
 padding-left: 15px;
 background-color: #E4E4E4;
-width: 100%;
+/* width: 100%; */
 }
 
 
@@ -417,4 +450,5 @@ h1 {
 	text-transform: uppercase;
 	display:block;
 	width: 100%;
+}
 }
