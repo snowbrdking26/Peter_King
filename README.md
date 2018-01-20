@@ -1,5 +1,5 @@
 # Peter_King
-Portfolio available here. Work in Progress.
+Portfolio available below:
 
 http://www.peterking.info
 
