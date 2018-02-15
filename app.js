@@ -45,7 +45,8 @@ function openAirTrafficGame() {
 
 function openWineAtlas() {
 "use strict";
-    window.open("https://wine-atlas.herokuapp.com/wines/home");
+    // window.open("https://wine-atlas.herokuapp.com/wines/home");
+    window.open("https://wine-atlas.herokuapp.com/wines/grape-varieties/red");
 }
 
 function openTravelApp() {
