@@ -57,3 +57,8 @@ function openCinema() {
     "use strict";
     window.open("https://laventure-cinema-front.herokuapp.com/");
 }
+
+function openGolf() {
+    "use strict";
+    window.open("http://www.golfscorecardsapp.com/");
+}

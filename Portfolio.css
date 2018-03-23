@@ -224,11 +224,13 @@ p {
 }
 
 p.tanbox {
-	margin: 40px 0 40px 0;
+	margin: 0px 0 40px 0;
+	font-size: 18px;
 }
 
 p.darkbox {
 	margin: 40px 0 40px 0;
+	font-size: 18px;
 }
 
 p.info {
@@ -290,16 +292,6 @@ h3 {
 /*.col-md-one-half {
 width: 50%;
 }*/
-
-.info-tan-box {
-	background-color: #b9a88e;
-	color:#ffffff;
-	padding: 30px 20px 30px;
-	text-align: center;
-	height: 400px;
-	width:50%;
-}
-
 main {
 	background-color: #E4E4E4;
 }
@@ -312,8 +304,8 @@ main {
 
 }
 
-.info-dark-box {
-	background-color: #2D2D35;
+.info-tan-box {
+	background-color: #b9a88e;
 	color:#ffffff;
 	padding: 30px 20px 30px;
 	text-align: center;
@@ -321,9 +313,25 @@ main {
 	width:50%;
 }
 
+.info-dark-box {
+	background-color: #2D2D35;
+	color:#ffffff;
+	padding: 30px 20px 30px;
+	text-align: center;
+	height: 400px;
+	width:50%;
+
+}
+
+.rowBoxes {
+		display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 
 .row {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 
@@ -369,9 +377,10 @@ footer {
 .content {
     background-color: #E4E4E4;
     padding: 10px;
-		margin:10px 10px;
-		min-height: 300px;
-		width: 25%;
+	margin:10px 10px;
+	min-height: 300px;
+	width: 38%;
+	max-width: 230px;
 }
 
 .content:hover {
@@ -383,7 +392,7 @@ margin-right: auto;
 margin-left: auto;
 padding: 15px 15px 35px 15px;
 background-color: #E4E4E4;
-width: 950px;
+width: auto;
 /* height:600px; */
 }
 
@@ -420,15 +429,16 @@ footer {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 /*tablet view*/
 
-@media (max-width: 900px){
+@media (max-width: 750px){
 
 .container {
+
 margin-right: auto;
 margin-left: auto;
 padding-right: 15px;
 padding-left: 15px;
 background-color: #E4E4E4;
-/* width: 100%; */
+width: auto;
 }
 
 
@@ -451,4 +461,30 @@ h1 {
 	display:block;
 	width: 100%;
 }
+
+.rowBoxes {
+	display: flex;
+	flex-wrap:nowrap;
+	justify-content: center;
+}
+
+.info-tan-box {
+	background-color: #b9a88e;
+	color:#ffffff;
+	padding: 30px 20px 30px;
+	text-align: center;
+	height: 400px;
+	width:100%;
+}
+
+.info-dark-box {
+	background-color: #2D2D35;
+	color:#ffffff;
+	padding: 30px 20px 30px;
+	text-align: center;
+	height: 400px;
+	width:100%;
+
+}
+
 }
