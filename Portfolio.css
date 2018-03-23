@@ -42,7 +42,7 @@ span {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: #2D2D35;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -377,8 +377,8 @@ footer {
     padding: 10px;
 	margin:10px 10px;
 	min-height: 300px;
-	width: 38%;
-	max-width: 330px;
+	width: 43%;
+	/* max-width: 390px; */
 }
 
 .content:hover {
@@ -436,7 +436,7 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
 
 .container {
 margin-right: auto;
