@@ -1,0 +1,23 @@
+{
+  "name": "peter_king",
+  "version": "1.0.0",
+  "description": "Portfolio available below:",
+  "main": "app.js",
+  "dependencies": {
+    "aos": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snowbrdking26/Peter_King.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snowbrdking26/Peter_King/issues"
+  },
+  "homepage": "https://github.com/snowbrdking26/Peter_King#readme"
+}

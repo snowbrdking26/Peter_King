@@ -8,12 +8,19 @@
 <link href="Portfolio.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="app.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- animation links -->
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js">
+	</script>
+<!-- end of animations -->
+
 </head>
 
 	<body>
 
 <div class="topnavbar" id="navbar">
-	<span onclick="openNav()">Menu &#9776;</span>
+	<span data-aos="zoom-in" data-aos-duration="3000" onclick="openNav()">Menu &#9776;</span>
 </div>
 
 <div id="mySidenav" class="sidenav">
@@ -22,24 +29,25 @@
   <a href="resume.html">Resume</a>
 </div>
 
+
 <div class="picture">
 	<div class="description">
-		<h1>Peter King</h1>
-		<h2>Fullstack developer</h2>
+		<h1 data-aos="zoom-in" data-aos-duration="3000">Peter King</h1>
+		<h2 data-aos="flip-up" data-aos-duration="2000"  data-aos-duration="3000">Fullstack developer</h2>
 	</div>
 </div>
 
 <div class="rowBoxes">
 
-			<div class="info-tan-box">
-			  <h2 class="about">About</h2>
-				<p class="tanbox">I am a Fullstack developer that works with programming languages Javascript and Ruby. I also make use of frameworks and libraries, React.js, Node.js, Angular.js, Express.js, Rails, jQuery, and Bootstrap. I have experience in front end (HTML5, CSS3, SASS) and backend (Rails, Express, PostgreSQL, Heroku/AWS) software and web applications.</p>
+			<div class="info-tan-box" >
+			  <h2 class="about"data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">About</h2>
+				<p class="tanbox"data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">I am a Fullstack developer that works with programming languages Javascript and Ruby. I also make use of frameworks and libraries, React.js, Node.js, Angular.js, Express.js, Rails, jQuery, and Bootstrap. I have experience in front end (HTML5, CSS3, SASS) and backend (Rails, Express, PostgreSQL, Heroku/AWS) software and web applications.</p>
 			</div>
 
 
 			<div class="info-dark-box">
-			  <h2 class="resume1">Resume</h2>
-			  <p class="darkbox">View resume and contact information</p>
+			  <h2 class="resume1"data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Resume</h2>
+			  <p class="darkbox"data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">View resume and contact information</p>
 					<br>
 			  <button class="btndark" onclick="location.href='resume.html';">Read More</button>
 			</div>
@@ -52,35 +60,35 @@
 
 		<div class="row">
 
-		<div class="content" onclick="openGolf()">
+		<div data-aos="flip-up" data-aos-duration="2000"  class="content" onclick="openGolf()">
 			<img src="images/appImages/golfscorecardapp.png" style="width:100%">
 			<h3>Golf Scorecard App</h3>
 			<p class="info">Created with Javascript, Ruby on Rails, Express.js, Angular.js, Node.js, EJS, MVC, backend API, SQL, PostgreSQL, Devise Token Authentication for user sign-up and login.</p>
 			<p class="click">View More</p>
 		</div>
 
-		<div class="content" onclick="openWineAtlas()">
+		<div data-aos="flip-up" data-aos-duration="2000"  class="content" onclick="openWineAtlas()">
 			<img src="images/appImages/wineatlas.png" style="width:100%">
 			<h3>Wine Atlas</h3>
 			<p class="info">Created with HTML, CSS, JavaScript, MongoDB, Express.js, Node.js, EJS, MVC file structure, 7 RESTful routes, 2 APIs, Multi Page Application, full CRUD, and bcrypt authentication.</p>
 			<p class="click">View More</p>
 		</div>
 
-		<div class="content" onclick="openTravelApp()">
+		<div data-aos="flip-up" data-aos-duration="2000"  class="content" onclick="openTravelApp()">
 			<img src="images/appImages/travel-tripn-app1.png" style="width:100%">
 			<h3>Travel App</h3>
 			<p class="info">Created with JavaScript, MongoDB, Express.js, Angular.js, Node.js, and HTML, CSS, Bootstrap, bcrypt authentication, in a Single Page Application</p>
 			<p class="click">View More</p>
 		</div>
 
-		<div class="content" onclick="openCinema()">
+		<div data-aos="flip-up" data-aos-duration="2000"  class="content" onclick="openCinema()">
 			<img src="images/appImages/movieApp.png" style="width:100%">
 			<h3>L'aventure Cinema</h3>
 			<p class="info">Created with Ruby on Rails, Express.js, Angular.js, Node.js, EJS, MVC, backend API, SQL, PostgreSQL, and Bcrypt authentication</p>
 			<p class="click">View More</p>
 		</div>
 
-		<div class="content" onclick="openAirTrafficGame()">
+		<div data-aos="flip-up" data-aos-duration="2000"  class="content" onclick="openAirTrafficGame()">
 			<img src="images/appImages/mainscreenshot3.png" style="width:100%">
 			<h3>Air Traffic Game</h3>
 			<p class="info">Created a game with JavaScript, jQuery, HTML, and CSS</p>
@@ -94,7 +102,7 @@
 
 <div class="skills">
 
-<h2 class="projects"> Skills</h2>
+<h2 data-aos="zoom-in" data-aos-duration="2000" class="projects"> Skills</h2>
 
 <!-- <div class="containerlogo">
 	<img src="images/htmlcssjs.png" alt="logos" class="logos">
@@ -113,17 +121,17 @@
 <img src="images/bootstrap.png" alt="logos" class="logos">
 </div> -->
 
-<div class="textListOfSkills">
+<div data-aos="zoom-in" data-aos-duration="2000" class="textListOfSkills">
 		<p class="textListOfSkills">JavaScript - Ruby - Rails - Python - jQuery - HTML - CSS - SASS - Bootstrap - SQL - PostgreSQL - MongoDB - Express - Angular.js - Node.js - Handlebars.js - Grunt.js - Ember.js
 		</p>
 </div>
 
 <div class="divLogosGitLinkedIn">
 	<a class="logosGithub" href="https://github.com/snowbrdking26">
-		<img class="logosGithub" src="images/githubLogo.png" alt="">
+		<img data-aos="zoom-in-right" data-aos-duration="2000" class="logosGithub" src="images/githubLogo.png" alt="">
 	</a>
 	<a class="logosLinkedIn" href="https://www.linkedin.com/in/king-peter/">
-		<img class="logosLinkedIn" src="images/linkedinLogo.png" alt="">
+		<img data-aos="zoom-in-left" data-aos-duration="2000" class="logosLinkedIn" src="images/linkedinLogo.png" alt="">
 	</a>
 </div>
 </div>
@@ -138,6 +146,11 @@
 	<p class="author">Fairfax, VA</p>
 </footer>
 
+<script>
+	AOS.init({
+	// duration: 3000
+	});
+</script>
 
 </body>
 </html>
