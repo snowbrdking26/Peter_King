@@ -60,5 +60,7 @@ function openCinema() {
 
 function openGolf() {
     "use strict";
-    window.open("http://www.golfscorecardsapp.com/");
+    window.open("https://golf-scorecard-app.herokuapp.com/");
+    // window.open("http://www.golfscorecardsapp.com/");
 }
+
