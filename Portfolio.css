@@ -161,7 +161,8 @@ h1 {
 }
 
 .picture {
-	background-image: url("https://imgur.com/7t4CUSt.jpeg");
+	/* background-image: url("https://imgur.com/7t4CUSt.jpeg"); */
+	background-image: url(images/IMG_7895.PNG);
 	background-size: cover;
 	height:800px;
 }
