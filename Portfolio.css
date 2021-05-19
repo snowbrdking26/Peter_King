@@ -385,6 +385,7 @@ footer {
 
 .content:hover {
 box-shadow: 0px 0px 20px #888888;
+
 }
 
 .container {
@@ -398,6 +399,8 @@ width: auto;
 
 section.work {
 	background-color: #E4E4E4;
+
+
 }
 
 .footer1 {
@@ -406,7 +409,11 @@ section.work {
 	font-weight: 500;
 	text-transform: uppercase;
 	font-size: 14px;
+
+
 }
+
+
 
 .author {
 	width:100%;
