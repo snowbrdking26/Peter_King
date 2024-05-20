@@ -18,15 +18,25 @@
 </head>
 
 	<body>
-
+<br>
+<br>
+<br>
+<br>
+<br>
 <div class="topnavbar" id="navbar">
 	<span data-aos="zoom-in-left" data-aos-duration="3000" onclick="openNav()">Menu &#9776;</span>
 </div>
 
 <div id="mySidenav" class="sidenav">
+	<!-- <a style="float: right;" onclick="closeNav()">Close |X|</a> -->
+	<br>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
-  <!-- <a href="resume.html">Resume</a> -->
+  <a href="index.html" onclick="closeNav()" >Home</a>
+	<a href="#section1" onclick="closeNav()" >Projects</a>
+<br><br>
+<br><br>
+<br><br>
+<a style="float: left;" onclick="closeNav()">|X| Close Menu </a>
 </div>
 
 
@@ -63,14 +73,14 @@
 
 <section class="work">
 	<div class="container">
-	<h2 class="projects">Projects</h2>
+	<h2 class="projects" id="section1">Projects</h2>
 
 		<div class="row">
 
 		<div data-aos="zoom-in" data-aos-duration="2000"  class="content" >
 			<img src="images/appImages/golfscorecardapp.png" style="width:100%">
 			<h3>Golf Scorecard App</h3>
-			<p class="info">Created with Javascript, Ruby on Rails, Express.js, Angular.js, Node.js, EJS, MVC, backend API, SQL, PostgreSQL, Devise Token Authentication for user sign-up and login.</p>
+			<p class="info">Created with Javascript, HTML, CSS, Express.js, Angular.js, Node.js</p>
 			<p class="click">View More</p>
 		</div>
 
