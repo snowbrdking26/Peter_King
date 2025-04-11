@@ -60,7 +60,18 @@ function openCinema() {
 
 function openGolf() {
     "use strict";
-    window.open("https://golf-scorecard-app.herokuapp.com/");
-    // window.open("http://www.golfscorecardsapp.com/");
+    window.open("https://golfappycards.com");
+    // window.open("https://golf-scorecard-app.herokuapp.com/");
 }
 
+function openAlignMateEntry() {
+    "use strict";
+    window.open("https://alignmateentry.com");
+  
+}
+
+function openFortressGlideCover() {
+    "use strict";
+    window.open("https://fortressglidecover.com/");
+
+}
