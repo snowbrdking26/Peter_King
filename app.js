@@ -75,3 +75,8 @@ function openFortressGlideCover() {
     window.open("https://fortressglidecover.com/");
 
 }
+function openPatrolPeakPlanner() {
+    "use strict";
+    window.open("https://PatrolPeakPlanner.com/");
+
+}
