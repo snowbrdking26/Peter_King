@@ -66,17 +66,19 @@ function openGolf() {
 
 function openAlignMateEntry() {
     "use strict";
-    window.open("https://alignmateentry.com");
+    // window.open("https://alignmateentry.com");
+    window.open("https://alignmateentry.github.io/AlignMateEntry-/")
   
 }
 
 function openFortressGlideCover() {
     "use strict";
-    window.open("https://fortressglidecover.com/");
+    // window.open("https://fortressglidecover.com/");
+    window.open("https://fortressglidecover.github.io/fortressGlideCover/")
 
 }
 function openPatrolPeakPlanner() {
     "use strict";
-    window.open("https://PatrolPeakPlanner.com/");
+    // window.open("https://PatrolPeakPlanner.com/");
 
 }
