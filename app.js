@@ -80,5 +80,5 @@ function openFortressGlideCover() {
 function openPatrolPeakPlanner() {
     "use strict";
     // window.open("https://PatrolPeakPlanner.com/");
-
+    window.open("https://patrolpeakplanner.github.io/PatrolPeakPlanner/home.html")
 }
