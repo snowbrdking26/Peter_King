@@ -82,3 +82,8 @@ function openPatrolPeakPlanner() {
     // window.open("https://PatrolPeakPlanner.com/");
     window.open("https://patrolpeakplanner.github.io/PatrolPeakPlanner/home.html")
 }
+
+
+function openRoboticCabinetDishwasherUnloader() {
+    window.open("https://snowbrdking26.github.io/RoboticCabinetDishwasherUnloader-/index.html")
+}
