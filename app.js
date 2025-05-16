@@ -87,3 +87,7 @@ function openPatrolPeakPlanner() {
 function openRoboticCabinetDishwasherUnloader() {
     window.open("https://snowbrdking26.github.io/RoboticCabinetDishwasherUnloader-/index.html")
 }
+
+function openFitCut() {
+    window.open("https://alignmateentry.github.io/AlignMateEntry-/FitCut.html")
+}
