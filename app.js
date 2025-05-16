@@ -74,13 +74,13 @@ function openAlignMateEntry() {
 function openFortressGlideCover() {
     "use strict";
     // window.open("https://fortressglidecover.com/");
-    window.open("https://fortressglidecover.github.io/fortressGlideCover/")
+    window.open("https://fortressglidecover.github.io/fortressGlideCover/WreathLatch.html")
 
 }
 function openPatrolPeakPlanner() {
     "use strict";
     // window.open("https://PatrolPeakPlanner.com/");
-    window.open("https://patrolpeakplanner.github.io/PatrolPeakPlanner/WreathLatch.html")
+    window.open("https://patrolpeakplanner.github.io/PatrolPeakPlanner/home.html")
 }
 
 
