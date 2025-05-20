@@ -1,248 +1,438 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RoboticCabinetDishwasherUnloader">
+    <meta property="og:description" content="DIY Security Shutter Blueprint for Only $499">
+    <meta property="og:image" content="IMG_2252.jpg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@website-ScorecardsGolf">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="shortcut icon" href="favicon2.png" type="image/x-icon">
+    <title>RoboticCabinetDishwasherUnloader</title>
 
-<title>Peter's Portfolio</title>
-<link href="Portfolio.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="app.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS & JS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js" defer></script>
 
-<!-- animation links -->
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js">
-	</script>
-<!-- end of animations -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: auto;
+            margin: auto;
+        }
 
+        header {
+            background: #fff;
+            box-shadow: 1px 1px 20px #000;
+            padding: 20px 0 0 50px;
+            font-size: 20px;
+        }
+
+        .hero {
+            background-image: url('IMG_2252.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: #98BE8E;
+            min-height: 300px;
+            padding: 50px 50px;
+            color: black;
+            text-shadow: 1px 1px 9px white;
+        }
+
+        .hero h1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .hero button {
+            font-size: 20px;
+            border-radius: 20px;
+            padding: 5px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .section {
+            color: white;
+            padding: 50px;
+            font-size: 20px;
+        }
+
+        .section.green {
+            background-color: #0C8346;
+            color:white;
+            font-size: 20px;
+        }
+
+        .footer {
+            background-color: #0D5D56;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 15px;
+        }
+
+        #cookie-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 9999;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        #cookie-popup button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .modal,
+        #showLinkFullVideoID {
+            display: none;
+            border-radius: 20px;
+            background-color: antiquewhite;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .modal textarea {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .modal-close {
+            text-align: right;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 15px 40px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 30px;
+      position: relative;
+    }
+
+    .nav-item {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .nav-item:hover {
+      color: #f0c040;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: -200px;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+
+    .dropdown p {
+      margin: 5px 0;
+      color: #eee;
+    }
+
+    /* .nav-item:hover .dropdown {
+      display: block;
+    } */
+
+    .nav-item .dropdown {
+  display: none;
+}
+
+.nav-item.open .dropdown {
+  display: block;
+}
+
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the benefits */
+.benefits-container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 800px;
+}
+
+/* Title styling */
+.benefits-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* List of benefits */
+.benefits-list {
+    display: block;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual benefit item */
+.benefit-item {
+    display: block;
+    align-items: center;
+    gap: 15px;
+    border-left: 4px solid #4CAF50;
+    padding-left: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.benefit-item:hover {
+    transform: scale(1.05);
+}
+
+/* Icon styling */
+.icon {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+/* Headline styling for each benefit */
+.benefit-item h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Description for each benefit */
+.benefit-item p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .benefits-title {
+        font-size: 1.6em;
+    }
+
+    .benefit-item {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .icon {
+        font-size: 2em;
+    }
+
+    .benefit-item h3 {
+        font-size: 1.2em;
+    }
+
+    .benefit-item p {
+        font-size: 0.9em;
+    }
+}
+
+/* ---------new------ */
+body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #444;
+    }
+
+    /* Benefits Flex Layout */
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1.5rem;
+    }
+
+    /* Benefit Card Styles */
+    .benefit {
+      flex: 1 1 250px;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .benefit h3 {
+      margin: 0;
+      color: #007BFF;
+      font-size: 1.25rem;
+    }
+
+    .benefit:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    </style>
 </head>
 
 <body>
 
-<div class="topnavbar" id="navbar">
-	<span data-aos="zoom-in-left" data-aos-duration="3000" onclick="openNav()">Menu &#9776;</span>
+    <div class="header">
+        <div class="logo">LiftBot</div>
+        <div class="nav-menu">
+        <!-- <div class="nav-item">About</div> -->
+            <div class="nav-item" onclick="this.classList.toggle('open')">Menu 
+                <div class="dropdown" style="float: right;">
+                    <p>Email: triathlonfrog752@gmail.com</p>
+                    <p>Web: www.peterking.info</p>
+                    <!-- <p>Location: 123 Robotics Blvd.</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+       
+        <section class="hero" style="background-image: url(https://snowbrdking26.github.io/RoboticCabinetDishwasherUnloader-/DishwasherUnloadingRobot2021.png); background-repeat: no-repeat; background-size: 300px; min-height: 400px; background-position: top; " >
+         
+        </section>
+
+
+        <div class="container">
+            <!-- <h1> Benefits</h1> -->
+            <div class="benefits1" style="text-align: left; padding-left: 70px;">
+                <div class="benefit1">
+                    <h3>Lifts, unloads dishes and more.</h3>
+                </div>
+                <div class="benefit1">
+                    <h3>Stacks items</h3>
+                </div>
+                <div class="benefit1">
+                    <h3>Increases Efficiency</h3>
+                </div>
+                <div class="benefit1">
+                    <h3>Enhances Productivity</h3>
+                </div>
+            </div>
+        </div>
+
+      
+      
+    </main>
+
+    <div id="cookie-popup">
+        <p>
+            We use cookies to improve your experience. By continuing, you agree to our use of cookies.
+            <a href="https://RoboticCabinetDishwasherUnloader.github.io/RoboticCabinetDishwasherUnloader/privacy-policy.html"
+                target="_blank">Privacy Policy</a>
+        </p>
+        <button onclick="acceptCookies()">Accept Cookies</button>
+    </div>
+
+    <footer class="footer" style="width: 100%; font-weight: 500; padding-bottom: 10px; z-index: 2;">
+        <br>
+     
+        <br>
+
+
+        <div>LiftBot <br> Lifts, unloads dishes and more.
 </div>
+        <!-- <div>www.RoboticCabinetDishwasherUnloader.com</div> -->
+        www.peterking.info
+        <!-- <div>RoboticCabinetDishwasherUnloader@gmail.com</div> -->
+        <div>&copy; 2021 LiftBot 
+– All Rights Reserved.</div>
+        <br><br><br><br>
+    </footer>
 
-<div id="mySidenav" class="sidenav">
-	<!-- <a style="float: right;" onclick="closeNav()">Close |X|</a> -->
-	<br>
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <!-- <a href="index.html" onclick="closeNav()" >Home</a> -->
-	<a href="#section1" onclick="closeNav()" >Projects</a>
-<br><br>
-<br><br>
-<br><br>
-<a style="float: left;" onclick="closeNav()">|X| Close Menu </a>
-</div>
+    <script>
+        function acceptCookies() {
+            document.getElementById('cookie-popup').style.display = 'none';
+        }
 
+        function showLinkFullVideo1() {
+            document.getElementById('showLinkFullVideoID').style.display = 'block';
+        }
 
-<div class="picture">
-	<div class="description">
-		<h1 data-aos="zoom-in" data-aos-duration="3000">Peter King</h1>
-		<h2 data-aos="fade-up" data-aos-duration="3000">Web Developer</h2>
-	</div>
-</div>
+        function closeShowLinkFullVideo() {
+            document.getElementById('showLinkFullVideoID').style.display = 'none';
+        }
 
-<div class="rowBoxes">
+        function openWindowSizePopUp() {
+            document.getElementById('WindowSizePopUpId').style.display = 'block';
+        }
 
-			<div class="info-tan-box" >
-				
-				
-				
-			  <h2 class="about"data-aos="zoom-in"  data-aos-duration="2000">About</h2>
-
-				<p class="tanbox"data-aos="zoom-in"  data-aos-duration="2000">I am a Web Developer that works with programming languages Javascript, Ruby, and PHP. I also make use of frameworks
-				and libraries, jQuery, Node.js, Angular.js, Express, and Rails. I have experience in front end (HTML5, CSS3, JS) and backend (Rails,
-				Express, PostgreSQL, Heroku/AWS) for web applications and software.</p>
-			
-			</div>
-
-
-			<!-- <div class="info-dark-box">
-			  <h2 class="resume1"data-aos="zoom-in"  data-aos-duration="2000">Resume</h2>
-			  <p class="darkbox" data-aos="zoom-in"  data-aos-duration="2000">View resume and contact information</p>
-					<br> -->
-			  <!-- <button data-aos="zoom-in" data-aos-duration="2000" class="btndark" onclick="location.href='resume.html';">Read More</button> -->
-			<!-- </div> -->
-</div>
-
- 
-<section class="work">
-	<div class="container">
-	<h2 class="projects" id="section1">Businesses</h2>
-
-		<div class="row">
-
-	<div onclick="openFitCut()" data-aos="zoom-in" data-aos-duration="2000" class="content">
-		<img src="FitCut.png" style="width:100%; margin: 0 0;">
-		<h3>FitCutBlueprint </h3>
-		<p class="info">A quiz and a 4-page fat loss plan, will be sent to your email. Created and inspired from my 50 lbs weightloss. </p>
-		<p class="click">View More</p>
-	</div>
-
-			
-<div onclick="openRoboticCabinetDishwasherUnloader()" data-aos="zoom-in" data-aos-duration="2000" class="content">
-	<img src="LiftBot.png" style="width:100%; margin: 0 0;">
-	<h3>LiftBot </h3>
-	<p class="info">Invented and created in 2021, LiftBot, lifts, unloads, stacks dishes and more, to save time and increase efficiency</p>
-	<p class="click">View More</p>
-</div>
-
-		<div onclick="openFortressGlideCover()" data-aos="zoom-in" data-aos-duration="2000" class="content">
-				<img src="FortressGlideCover.png" style="width:100%; margin: 0 0;">
-				<h3>FortressGlideCover LLC</h3>
-				<p class="info">Invented and created in 2025, A hidden latch that unlocks when a wreath is pulled, and a security shutter for window door security and energy efficiency</p>
-				<p class="click">View More</p>
-		</div>
-
-		<div onclick="openAlignMateEntry()" data-aos="zoom-in" data-aos-duration="2000" class="content">
-			<img src="AlignMateEntry.png" style="width:100%; margin: 0 0;">
-			<h3>AlignMateEntry LLC</h3>
-			<p class="info">Invented and created in 2021, a parking assist device, for entering a tight parking spot.</p>
-			<p class="click">View More</p>
-		</div>
-
-		<div onclick="openPatrolPeakPlanner()" data-aos="zoom-in" data-aos-duration="2000" class="content">
-			<img src="PatrolPeakPlanner.png" style="width:100%; margin: 0 0;">
-			<h3>PatrolPeakPlanner LLC</h3>
-			<p class="info">Created in 2024 offers a task and checklist app for any lifegaurd or ski patrol to enhance productivity, and replace paper.</p>
-			<p class="click">View More</p>
-		</div>
-
-		<div onclick="openGolf()" data-aos="zoom-in" data-aos-duration="2000"  class="content" >
-			<img src="golfAppyCardsImage.png" style="width:100%; margin: 0 0;">
-			<h3>golfAppyCards LLC</h3>
-			<p class="info">Created in 2017 offers  digital golf scorecards to replace paper golf scorecards</p>
-			<p class="click">View More</p>
-		</div>
-
-		<div data-aos="zoom-in" data-aos-duration="2000"  class="content" >
-			<img src="images/appImages/wineatlas.png" style="width:100%; margin: 0 0;">
-			<h3>Wine Atlas</h3>
-			<p class="info">Created in 2017 offers a way to upload and keep favorite wine labels. 
-			HTML, CSS, JavaScript, MongoDB, Express.js, Node.js, EJS, MVC file structure, 7 RESTful routes, 2 APIs, Multi Page Application, full CRUD, and bcrypt authentication.</p>
-			<p class="click">View More</p>
-		</div>
-
-		<!-- <div data-aos="zoom-in" data-aos-duration="2000"  class="content" onclick="openTravelApp()">
-			<img src="images/appImages/travel-tripn-app1.png" style="width:100%; margin: 0 0;">
-			<h3>Travel App</h3>
-			<p class="info">Created with JavaScript, MongoDB, Express.js, Angular.js, Node.js, and HTML, CSS, Bootstrap, bcrypt authentication, in a Single Page Application</p>
-			<p class="click">View More</p>
-		</div> -->
-
-		<div data-aos="zoom-in" data-aos-duration="2000"  class="content" >
-			<img src="images/appImages/movieApp.png" style="width:100%; margin: 0 0;">
-			<h3>L'aventure Cinema</h3>
-			<p class="info">Created in 2017 offers a way to list favorite movies. 
-			Ruby on Rails, Express.js, Angular.js, Node.js, EJS, MVC, backend API, SQL, PostgreSQL, and Bcrypt authentication</p>
-			<p class="click">View More</p>
-		</div>
-
-		<div data-aos="zoom-in" data-aos-duration="2000"  class="content" onclick="openAirTrafficGame()">
-			<img src="images/appImages/mainscreenshot3.png" style="width:100%; margin: 0 0;">
-			<h3>Air Traffic Game</h3>
-			<p class="info">Created a game with JavaScript, jQuery, HTML, and CSS</p>
-			<p class="click">View More</p>
-		</div>
-		
-
-		</div>
-	</div>
-</section>
-
-<div class="skills">
-
-<h2 data-aos="zoom-in" data-aos-duration="2000" class="projects"> Skills</h2>
-
-<!-- <div class="containerlogo">
-	<img src="images/htmlcssjs.png" alt="logos" class="logos">
-<img src="images/ruby.png" alt="logos" class="logos">
-<img src="images/rails.png" alt="logos" class="logos">
-<img src="images/python.png" alt="logos" class="logos">
-<img src="images/sql.png" alt="logos" class="logos">
-<img src="images/postgresql.png" alt="logos" class="logos">
-<img src="images/node.png" alt="logos" class="logos">
-<img src="images/jquery.png" alt="logos" class="logos">
-<img src="images/mongoDB.png" alt="logos" class="logos">
-<img src="images/angular.png" alt="logos" class="logos">
-<img src="images/handlebars.png" alt="logos" class="logos">
-<img src="images/grunt.png" alt="logos" class="logos">
-<img src="images/ember.png" alt="logos" class="logos">
-<img src="images/bootstrap.png" alt="logos" class="logos">
-</div> -->
-
-<div data-aos="zoom-in" data-aos-duration="3000" class="textListOfSkills">
-		<p class="textListOfSkills">JavaScript - jQuery - Ruby - Rails - Python - PHP - CodeIgniter - C - MVC - OOP - HTML - CSS - SQL - PostgreSQL - MongoDB - Express - Angular.js - Node.js - Handlebars.js - Grunt.js - Ember.js - LESS.js - Sass/SCSS - Adobe Photoshop - Illustrator - InDesign - PhoneGap - Swift - Xcode
-		</p>
-</div>
-
-<!-- <div class="divLogosGitLinkedIn">
-	<a class="logosGithub" href="https://github.com/snowbrdking26">
-		<img data-aos="zoom-in-right" data-aos-duration="3000" class="logosGithub" src="images/githubLogo.png" alt="">
-	</a>
-	<a class="logosLinkedIn" href="https://www.linkedin.com/in/king-peter/">
-		<img data-aos="zoom-in-left" data-aos-duration="3000" class="logosLinkedIn" src="images/linkedinLogo.png" alt="">
-	</a>
-</div> -->
-</div>
-
-
-
-
-<footer>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<!-- Cookie Popup -->
-<div id="cookie-popup"
-	style="position: fixed; bottom: 20px; left: 20px; right: 20px; background: #fff; border: 1px solid #ccc; padding: 20px; z-index: 9999; display: block; font-family: Arial, sans-serif; font-size: 14px; color: black;">
-	<p>
-		We use cookies to improve your experience on our site. By continuing, you agree to our use of cookies.
-		Read our <a style="font-size: 14px; " href="http://peterking.info/privacy-policy.html" target="_blank"
-			style="color: blue; text-decoration: underline;"> <b>Privacy
-			Policy</b></a> for more information.
-	</p>
-	<button onclick="acceptCookies()"
-		style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
-		Accept Cookies
-	</button>
-</div>
-
-<script>
-	// Show popup if cookies not yet accepted
-	// if (!localStorage.getItem('cookiesAccepted')) {
-	//     document.getElementById('cookie-popup').style.display = 'block';
-	// }
-
-	// Function to accept cookies
-	function acceptCookies() {
-		// localStorage.setItem('cookiesAccepted', 'true');
-		document.getElementById('cookie-popup').style.display = 'none';
-	}
-</script>
-
-
-  <p class="footer1" style="color: white;">Developed by Peter King - November 2017</p>
-<div> &copy; 2017-2025 Peter King. <br>
-	All Rights Reserved.</div>
-</div>
-  	<br><br><br>
-	<br><br><br>
-	<br><br><br>
-	<br><br><br>
-	<br><br><br>
-
-
-</footer>
-
-<script>
-	AOS.init({
-	// duration: 3000
-	});
-</script>
+        function closeWindowSizePopUp() {
+            document.getElementById('WindowSizePopUpId').style.display = 'none';
+        }
+    </script>
 
 </body>
+
 </html>
